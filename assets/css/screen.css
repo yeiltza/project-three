@@ -16,47 +16,54 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   text-align: left;
   font-family: "Raleway", sans-serif;
-  line-height: 26px;
-  font-size: 18px;
+  line-height: 1.4444444444em; /*26/18 = 1.4444444444*/
+  font-size: 1.125em; /* 18/16 = 1.125*/
   background-color: #EECDD6;
 }
 h1 {
   text-align: center;
   font-family: "Merriweather Sans", sans-serif;
-  padding: 26px;
+  padding: 1.4444444444em; /* 26/18 = 1.4444444444*/
 }
 h2 {
   font-family: "Lato", sans-serif;
-  padding: 26px;
+  padding: 1.4444444444em;/* 26/18 = 1.4444444444*/
 }
 .nav a {
   text-decoration: none;
   color: #1f0300;
-  font-size: 18px;
+  font-size: 1em; /* 18 /18 = 1 */
   font-weight: bold;
   text-align: center;
   background-color: #990033;
   opacity: 0.55;
   border-color: #ffe099;
-  padding: 10px;
+  padding: 1em; /* 10/18 = 0.5555555556 */
   width: auto;
 }
 .nav li {
-  padding-bottom: 26px;
+  padding-bottom: 1.4444444444em; /* 26/18 = 1.4444444444 */
 }
 img {
   display: block;
   max-width: 80%;
-  border: 1px solid #EEE;
+  border: 0.0555555556em solid #EEE; /* 1/18 = 0.05555555556 */
   box-sizing: border-box;
   float: right;
-  padding: 26px;
+  padding: 1.4444444444em;
 }
 figcaption{
 
 }
 
-@media screen and (min-width: 500px) { /*510/16=31.875*/
+@media screen and (min-width: 27.7777777778em) { /* 500/ 18 = 27.7777777778 */
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+  }
+}
+@media screen and (min-width: 16.6666666667em) { /* 300/ 18 = 16.6666666667*/
   .nav {
     display: flex;
     justify-content: space-evenly;
